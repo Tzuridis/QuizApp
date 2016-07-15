@@ -8,21 +8,15 @@ h1, h2 {
 	text-align: center;
 }
 
-.centerList {
-	margin: auto;
-	width: 70%;
-}
 
 ul
 {
     list-style-type: none;
 }
 
-#page2, #page3, #page4, #page5, #page6, #page7, #page8, #page9, #page10{
- display: none;
-}
-
 .Start, .Submit, .Next, .Restart {
+	margin: auto;
+	text-align: center;
 	background-color: #008CBA;
     border: none;
     color: white;
@@ -41,13 +35,6 @@ ul
 }
 
 
-.Answers, .Answers2, .Answers3, .Answers4 {
-margin-left: 5em;
-height: 10em;
-}
-
-
-
 img {
     display: block;
     margin: auto;
@@ -55,31 +42,13 @@ img {
     border-radius: 50%;
 }
 
-p {
-	padding: 70px 0;
-    text-align: center;
-}
 
-footer {
-	padding: 70px 0;
-    text-align: center;
-}
-
-input {
-    width: 13px;
-    height: 13px;
-    padding: 0;
-    margin:0;
-    vertical-align: bottom;
-    position: relative;
-    top: -1px;
-    *overflow: hidden;
-}
 
 label {
     display: block;
     padding-left: 15px;
     text-indent: -15px;
+
 }
 
 body {
@@ -91,3 +60,24 @@ body {
   	text-shadow: 4px 4px 3px rgba(0,0,0,0.1); 
 }
 
+.simple {
+	background-size: 100% 120%;
+}
+
+
+.Next, .Submit {
+	margin-left: 25em;
+	margin-top: 5em;
+}
+
+.Next {
+	margin-right: 25em;
+}
+
+#checkbox {
+	margin-left: 15em;
+}
+
+#Answer {
+	visibility: hidden;
+}
