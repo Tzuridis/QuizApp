@@ -32,7 +32,7 @@ $(document).ready(function() {
         img: 'img/hitler.jpg'
     }]
 
-    var messages = ["You Suck", "Scrub", "Eh", "Nice"];
+    var messages = ["Better luck next time", "Atleast you got a few right", "Almost, you got most of the questions right!", "Good Job you got all the questions right!"];
 
 
     $('.Start').click(function() {
@@ -61,7 +61,7 @@ $(document).ready(function() {
 
 
     $('#Submit').click(function() {
-        var status = 'Incorrect!';
+        var status = 'Incorrect! The correct answer is:'+ " " + questions[current].options[questions[current].answer] + ".";
         if (!$("#myForm input[name=answers]:checked").val()) {
            alert('Unable to comply, system failure, error, error, error...');
         } else {
@@ -88,6 +88,7 @@ $(document).ready(function() {
             var messageIndex = Math.max(Math.round((score / questions.length) * messages.length) - 1, 0);
             console.log(messageIndex)
             $('#StatsPage').append('<p>' + messages[messageIndex] + '</p>')
+            $('#StatsPage').append('<p>' + score + '/' + questions.length + '</p>')
             document.getElementById("StatsPage").style.visibility = "visible";
             document.getElementById("Next").style.visibility = "hidden";
             reset();
