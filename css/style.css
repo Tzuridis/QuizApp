@@ -1,5 +1,12 @@
+.container {
+	height: 15em;
+	width: 100%;
+	position: relative;
+	overflow: hidden;
+}
+
 h1, h2 {
-	padding: 30px 0;
+	padding: 10px 0;
     text-align: center;
 }
 
@@ -8,13 +15,12 @@ h1, h2 {
 	text-align: center;
 }
 
-
 ul
 {
     list-style-type: none;
 }
 
-.Start, .Submit, .Next, .Restart {
+.Button-Primary {
 	margin: auto;
 	text-align: center;
 	background-color: #008CBA;
@@ -23,13 +29,12 @@ ul
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
-    display: inline-block;
     font-size: 16px;
 }
-.Start:hover, .Submit:hover, .Next:hover, .Restart:hover {
+.Button-Primary:hover{
 	background-color:#1e62d0;
 }
-.Start:active, .Submit:active, .Next:active, .Restart:active {
+.Button-Primary:active {
 	position:relative;
 	top:1px;
 }
@@ -38,8 +43,8 @@ ul
 img {
     display: block;
     margin: auto;
-    width: 40%;
-    border-radius: 50%;
+    width: 10%;
+    border-radius: 5%;
 }
 
 
@@ -65,14 +70,11 @@ body {
 }
 
 
-.Next, .Submit {
-	margin-left: 25em;
-	margin-top: 5em;
+#Next, #Submit {
+	margin: 0 auto;
+	text-align: center;
 }
 
-.Next {
-	margin-right: 25em;
-}
 
 #checkbox {
 	margin-left: 15em;
@@ -80,4 +82,13 @@ body {
 
 #Answer {
 	visibility: hidden;
+}
+
+input[type=radio] {
+	 width: 3.0em;
+    height: 3.0em;
+}
+
+p {
+	text-align: center;
 }
