@@ -21,7 +21,7 @@ ul
 }
 
 .Button-Primary {
-	margin: auto;
+	margin: 0 auto;
 	text-align: center;
 	background-color: #008CBA;
     border: none;
@@ -35,7 +35,6 @@ ul
 	background-color:#1e62d0;
 }
 .Button-Primary:active {
-	position:relative;
 	top:1px;
 }
 
@@ -59,7 +58,7 @@ label {
 body {
 	background-image: url("http://history.hanover.edu/texts/1811/Map/bck44btn.jpg");
 	background-repeat: no-repeat;
-	background-size: 100% 120%;
+	background-size: 100% 135%;
 	 font: 400 50px/0.8 'Great Vibes', Helvetica, sans-serif;
   	color: black;
   	text-shadow: 4px 4px 3px rgba(0,0,0,0.1); 
@@ -70,9 +69,21 @@ body {
 }
 
 
-#Next, #Submit {
+#Submit {
 	margin: 0 auto;
 	text-align: center;
+	position: absolute;
+	top: 50%;
+	left: 47%;
+	margin-top: 10%;
+}
+
+#Next {
+	margin: 0 auto;
+	text-align: center;
+	position: absolute;
+	top: 90%;
+	left: 47%;	
 }
 
 
